@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* COLORS */
+
+.primary-bg {
+    background: var(--main-color);
+}
+
+/* LOGO */
+
+.logo-text {
+    font-size: 0;
+    margin: 0;
+}
+
+.logo_img {
+    width: 98px;
+    margin-top: 15px;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background-color: var(--transparent);
+    transition: background 0.5s linear
+}
+
+.navbar ul a:hover {
+    background-color: var(--transparent);
+    color: var(--main-color);
+}
+
+.nav-color {
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: background 0.5s linear;
+}
+
+/* CUSTOM */
+
+nav, nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons, nav a.button-collapse {
+    height: 94px;
+    line-height: 94px;
+}
+
+nav.nav-extended .nav-wrapper {
+    min-height: 94px;
+    height: auto;
+}
+
+.navbar-fixed {
+    position: absolute;
+    height: 94px;
+}
+
+.sidenav {
+    background: url('../img/textura3.png');
+}
+
+.sidenav li>a {
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.row {
+    margin-bottom: 0;
+}
+
+.tabs {
+    background: #444444;
+}
+
+.tabs .tab a {
+    color: var(--main-color);
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+    color: var(--main-color);
+}
+
+.tabs .indicator {
+    background-color: var(--main-color);
+}
+
+/* HOME */
+
+.bloco {
+    min-height: 100%;
+    padding-top: 94px;
+}
+
+.home {
+    animation: mudarbg 20s infinite;
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner h3 {
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.banner p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.banner .botoes {
+    margin-top: 2rem;
+}
+
+/* HOME - ANIMATION */
+
+@keyframes mudarbg {
+    40% {
+        background-image: url('../img/bg3.jpg');
+    }
+    80% {
+        background-image: url('../img/bg3.jpg');
+    }
+    100% {
+        background-image: url('../img/bg.jpg');
+    }
+}
+
+.title {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    margin: 15px auto;
+    border-top: 2px solid var(--main-color);
+}
+
+.paragraph {
+    line-height: 1.8rem;
+}
+
+/* ABOUT */
+
+.about {
+    background: url('../img/textura1.png');
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
+
+.about p {
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+.about .mission-vision-value {
+    padding: 30px 0;
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
+.about .mission-vision-value h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.about .mission-vision-value p {
+    color: #ffffff;
+    text-align: center;
+}
+
+.about .mission-vision-value .icon {
+    color: #fff;
+}
+
+/* SERVICES */
+
+.services {
+    background-image: url('../img/textura2.png');
+}
+
+.services .btn-horario {
+    margin-bottom: 20px;
+}
+
+/* UNITIES */
+
+.unities {
+    background-image: url('../img/bg-unidades.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.unities article p {
+    line-height: 1.8rem;
+}
+
+/* CONTACT */
+
+.contact {
+    background-image: url('../img/textura1.png');
+}
+
+.contact .map {
+    min-height: 500px;
+}
+
+.contact .map iframe {
+    width: 100%;
+    min-height: 550px;
+    border: none;
+}
+
+.contact .information {
+    background-image: url('../img/textura2.png');
+    min-height: 550px;
+    padding: 30px;
+}
+
+.contact h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.contact .form {
+    min-height: 550px;
+    padding: 30px;
+}
+
+/* DEPOIMENTS */
+
+.depoiments h2::after {
+    border-top: 2px solid #fff;
+}
+
+.depoiments img {
+    width: 100px;
+}
+
+.depoiments h4 {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+/* FOOTER */
+
+.footer {
+    background-image: url('../img/bg-rodape.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0;
+}
+
+/* Media */
+
+@media only screen and (max-width: 480px) {
+    .card-image-horizontal {
+        display: none;
+    }
+    .banner h3 {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .banner {
+        padding-top: 4.5rem;
+    }
+    .banner h3 {
+        font-size: 4rem;
+    }
+    .container {
+        width: 85%;
+    }
+    nav a.button-collapse, a.sidenav-trigger {
+        height: 94px !important;
+        line-height: 94px !important;
+        margin-top: 18px
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .banner {
+        padding-top: 5rem;
+    }
+    .banner h3 {
+        font-size: 5rem;
+    }
+    .container {
+        width: 90%;
+    }
+}
